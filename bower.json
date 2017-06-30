@@ -1,17 +1,17 @@
 {
   "name": "things-responsive-iframe",
-  "version": "0.1.16",
+  "version": "2.1.0",
   "authors": [
     "Hatio Lab. <heartyoh@hatiolab.com>"
   ],
-  "description": "An element providing badge button.",
+  "description": "Responsive iFrame container for sandboxing web applications.",
   "keywords": [
     "web-component",
     "polymer",
     "seed"
   ],
-  "main": "things-setting.html",
-  "license": "http://polymer.github.io/LICENSE.txt",
+  "main": "things-responsive-iframe.html",
+  "license": "https://github.com/ThingsElements/things-responsive-iframe/EULA.MD",
   "homepage": "https://github.com/ThingsElements/things-responsive-iframe/",
   "ignore": [
     "/.*",
