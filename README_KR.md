@@ -101,37 +101,30 @@
 </dom-module>
 ```
 
-## Install the Polymer-CLI
 
-First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your application locally.
+## Dependencies
 
-## Viewing Your Application
+Element dependencies are managed via [Bower](http://bower.io/). You can
+install that via:
 
-```
-$ polymer serve
-```
+    npm install -g bower
 
-## Building Your Application
+Then, go ahead and download the element's dependencies:
 
-```
-$ polymer build
-```
+    bower install
 
-This will create a `build/` folder with `bundled/` and `unbundled/` sub-folders
-containing a bundled (Vulcanized) and unbundled builds, both run through HTML,
-CSS, and JS optimizers.
 
-You can serve the built versions by giving `polymer serve` a folder to serve
-from:
+## Playing With Your Element
 
-```
-$ polymer serve build/bundled
-```
+If you wish to work on your element in isolation, we recommend that you use
+[Polyserve](https://github.com/PolymerLabs/polyserve) to keep your element's
+bower dependencies in line. You can install it via:
 
-## Running Tests
+    npm install -g polymer-cli
 
-```
-$ polymer test
-```
+And you can run it via:
 
-Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
+    polymer serve
+
+Once running, you can preview your element at
+`http://localhost:8080/components/things-responsive-iframe/`, where `things-responsive-iframe` is the name of the directory containing it.
