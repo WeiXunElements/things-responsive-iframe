@@ -26,14 +26,14 @@
  
 			properties: {
 				/**
-				 * 애플리케이션 ID
+				 * Application ID
 				 */
 				resourceId: {
 					type: String
 				},
 
 				/**
-				 * 선택된 애플리케이션 정보 
+				 * Selected application information 
 				 */
 				resource: {
 					type: Object,
@@ -70,7 +70,7 @@
 			},
 
 			/**
-			 * Application 선택이 변경된 경우
+			 * When Application selection is changed
 			 *
 			 * @param {Object} resource
 			 */
@@ -88,7 +88,7 @@
 			},
 
 			/**
-			 * managementUrl, appAgentPort로 jvmMonitorUrl을 계산 
+			 * Calculation of jvmMonitorUrl with managementUrl, appAgentPort
 			 *
 			 * @param {String} managementUrl
 			 * @param {String} appAgentPort
@@ -104,8 +104,7 @@
 
 ## Dependencies
 
-Element dependencies are managed via [Bower](http://bower.io/). You can
-install that via:
+Element dependencies are managed via [Bower](http://bower.io/). You can install that via:
 
     npm install -g bower
 
