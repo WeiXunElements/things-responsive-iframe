@@ -1,6 +1,6 @@
 {
   "name": "things-responsive-iframe",
-  "version": "2.1.0",
+  "version": "v2.2.0",
   "authors": [
     "Hatio Lab. <heartyoh@hatiolab.com>"
   ],
@@ -11,8 +11,8 @@
     "seed"
   ],
   "main": "things-responsive-iframe.html",
-  "license": "https://github.com/ThingsElements/things-responsive-iframe/EULA.MD",
-  "homepage": "https://github.com/ThingsElements/things-responsive-iframe/",
+  "license": "http://license.hatiolab.com/EULA",
+  "homepage": "http://elements.hatiolab.com/",
   "ignore": [
     "/.*",
     "/test/"
