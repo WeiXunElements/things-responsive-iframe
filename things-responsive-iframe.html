@@ -1,61 +1,60 @@
 <!--
 @license
-Copyright © HatioLab Inc. All rights reserved.
+Copyright © 2015-2021 Shenzhen Weixun All rights reserved.
 -->
-<link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../iron-flex-layout/iron-flex-layout-classes.html">
+<link rel="import" href="../polymer/polymer.html" />
+<link rel="import" href="../iron-flex-layout/iron-flex-layout-classes.html" />
 
 <dom-module id="things-responsive-iframe">
-    <template>
-        <style>
-            :host {
-                height: 100%;
-            }
-            .wrapper {
-              width: var(--responsive-iframe-wrapper-width, 100%);
-              height: 100%;
-              margin: 0 auto;
-              @apply(--layout-vertical);
-            }
-            .h_iframe {
-              position: relative;
-              @apply(--layout-flex);
-            }
-            .h_iframe .ratio {
-              display: block;
-              width: 100%;
-              height: auto;
-            }
-            .h_iframe iframe {
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-            }
-        </style>
-        <div class="wrapper">
-            <div class="h_iframe">
-                <iframe src="[[resourceUrl]]" sandbox="[[restrictions]]" frameborder="0"></iframe>
-            </div>
-        </div>
-    </template>
+  <template>
+    <style>
+      :host {
+        height: 100%;
+      }
+      .wrapper {
+        width: var(--responsive-iframe-wrapper-width, 100%);
+        height: 100%;
+        margin: 0 auto;
+        @apply (--layout-vertical);
+      }
+      .h_iframe {
+        position: relative;
+        @apply (--layout-flex);
+      }
+      .h_iframe .ratio {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .h_iframe iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <div class="wrapper">
+      <div class="h_iframe">
+        <iframe src="[[resourceUrl]]" sandbox="[[restrictions]]" frameborder="0"></iframe>
+      </div>
+    </div>
+  </template>
 
-    <script>
-        Polymer({
+  <script>
+    Polymer({
+      is: 'things-responsive-iframe',
 
-            is: 'things-responsive-iframe',
-
-            properties: {
-                resourceUrl: {
-                    type: String,
-                    value: 'http://factory.pointhing.xyz:5551'
-                },
-                restrictions: {
-                  type: String,
-                  value: 'allow-forms allow-pointer-lock allow-popups allow-scripts allow-same-origin allow-top-navigation'
-                }
-            }
-        });
-    </script>
+      properties: {
+        resourceUrl: {
+          type: String,
+          value: 'http://factory.pointhing.xyz:5551',
+        },
+        restrictions: {
+          type: String,
+          value: 'allow-forms allow-pointer-lock allow-popups allow-scripts allow-same-origin allow-top-navigation',
+        },
+      },
+    });
+  </script>
 </dom-module>
